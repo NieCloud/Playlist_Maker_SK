@@ -10,20 +10,13 @@
     >
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="4dp">
+        style = "@style/HeaderLayout_custom">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_screen_name"
-            android:textColor="#ffffff"
-            android:textSize="26sp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/ys_regular"/>
+            style ="@style/HeaderStyle"
+
+            android:text="@string/playlist_maker"
+            />
     </FrameLayout>
 
     <LinearLayout
@@ -37,83 +30,47 @@
         >
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            style="@style/MainMenuButton"
 
-
-            android:fontFamily="@font/ys_regular"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
             android:text="@string/Search_text_mainmenu"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
 
-            android:backgroundTint="@color/white"
-
-            android:textSize="22sp"
-
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/button_corner_radius"
 
             app:icon="@drawable/magnifying_glass_icon"
 
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             app:iconTint="@color/black"
 
             />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            style="@style/MainMenuButton"
 
-
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_regular"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
             android:text="@string/Media_text_mainmenu"
-            android:textAllCaps="false"
 
-            android:textColor="@color/black"
-
-            android:textSize="22sp"
-
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/button_corner_radius"
 
             app:icon="@drawable/music_icon"
 
 
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             app:iconTint="@color/black"
 
             />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            style="@style/MainMenuButton"
 
-
-            android:backgroundTint="@color/white"
-            android:fontFamily="@font/ys_regular"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
             android:text="@string/Settings_text_mainmenu"
-            android:textAllCaps="false"
 
-            android:textColor="@color/black"
-
-            android:textSize="22sp"
-
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/button_corner_radius"
 
             app:icon="@drawable/gear_icon"
 
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             app:iconTint="@color/black"/>
     </LinearLayout>
 
