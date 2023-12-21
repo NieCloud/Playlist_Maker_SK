@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background_mainmenu"
-    tools:context=".SettingsActivity"
+    tools:context=".MainActivity"
     >
 
     <FrameLayout
@@ -33,6 +33,7 @@
 
         <Button
             style="@style/MainMenuButton"
+            android:id="@+id/search_button"
 
             android:text="@string/Search_text_mainmenu"
 
@@ -48,6 +49,7 @@
 
         <Button
             style="@style/MainMenuButton"
+            android:id="@+id/mediateka_button"
 
             android:text="@string/Media_text_mainmenu"
 
@@ -64,6 +66,7 @@
 
         <Button
             style="@style/MainMenuButton"
+            android:id="@+id/settings_button"
 
             android:text="@string/Settings_text_mainmenu"
 
