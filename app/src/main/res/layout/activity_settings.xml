@@ -4,38 +4,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
 
     tools:context=".SettingsActivity"
-
-
     >
 
     <LinearLayout
-        style = "@style/HeaderLayout_custom"
-        android:layout_marginBottom="24dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/settings_back_button"
+            android:id="@+id/search_button"
             android:layout_width="48dp"
             android:layout_height="match_parent"
-
-
-            app:icon="@drawable/back_arrow"
-
-            />
-
+            android:paddingStart="12dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="12dp"
+            app:icon="@drawable/magnifying_glass_icon"
+            app:iconSize="24dp"
+            app:iconTint="@color/black" />
 
         <TextView
-            style ="@style/HeaderStyle"
-            android:textColor="@color/black"
+            style="@style/HeaderStyle"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="86dp"
+            android:paddingBottom="12dp"
             android:text="@string/Settings_text_mainmenu"
-            />
+            android:textColor="@color/black" />
     </LinearLayout>
 
     <LinearLayout
