@@ -6,30 +6,21 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
 
-    tools:context=".SettingsActivity"
-    >
+    tools:context=".SettingsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="24dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/search_button"
-            android:layout_width="48dp"
-            android:layout_height="match_parent"
-            android:paddingStart="12dp"
-            android:paddingTop="12dp"
-            android:paddingEnd="12dp"
-            android:paddingBottom="12dp"
-            app:icon="@drawable/magnifying_glass_icon"
-            app:iconSize="24dp"
-            app:iconTint="@color/black" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+            />
 
         <TextView
             style="@style/HeaderStyle"
@@ -43,25 +34,21 @@
             android:textColor="@color/black" />
     </LinearLayout>
 
-    <LinearLayout
-        style="@style/SettingsMenuViewStyle">
+    <LinearLayout style="@style/SettingsMenuViewStyle">
 
         <TextView
             style="@style/SettingsMenuTextStyle"
-            android:text="@string/darkThemeSettingsName"
-            />
+            android:text="@string/darkThemeSettingsName" />
 
         <Switch
             android:id="@+id/switch1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="24dp"
-            />
+            android:layout_marginLeft="24dp" />
 
     </LinearLayout>
 
-    <FrameLayout
-        style="@style/SettingsMenuViewStyle">
+    <FrameLayout style="@style/SettingsMenuViewStyle">
 
         <TextView
             style="@style/SettingsMenuTextStyle"
@@ -75,8 +62,7 @@
             android:src="@drawable/share_icon" />
     </FrameLayout>
 
-    <FrameLayout
-        style="@style/SettingsMenuViewStyle">
+    <FrameLayout style="@style/SettingsMenuViewStyle">
 
         <TextView
             style="@style/SettingsMenuTextStyle"
@@ -90,8 +76,7 @@
             android:src="@drawable/callcenter_icon" />
     </FrameLayout>
 
-    <FrameLayout
-        style="@style/SettingsMenuViewStyle">
+    <FrameLayout style="@style/SettingsMenuViewStyle">
 
         <TextView
             style="@style/SettingsMenuTextStyle"
