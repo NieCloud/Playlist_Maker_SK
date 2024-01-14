@@ -13,15 +13,13 @@
     tools:context=".MainActivity"
     >
 
-    <FrameLayout
-        style = "@style/HeaderLayout_custom">
 
         <TextView
+
             style ="@style/HeaderStyle"
 
             android:text="@string/playlist_maker"
             />
-    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,8 +27,7 @@
         android:layout_height="match_parent"
         android:paddingTop="24dp"
         android:paddingBottom="28dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:paddingHorizontal="32dp"
         >
 
         <Button

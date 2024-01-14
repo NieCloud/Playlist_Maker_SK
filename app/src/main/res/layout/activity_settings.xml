@@ -12,8 +12,9 @@
     tools:context=".SettingsActivity"
     >
 
-    <LinearLayout
-        style = "@style/HeaderLayout_custom"
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:layout_marginBottom="24dp">
 
         <ImageView
@@ -21,17 +22,16 @@
             android:layout_width="48dp"
             android:layout_height="match_parent"
             android:padding="12dp"
-
-            app:srcCompat="@drawable/back_arrow"
-
-            />
+            app:srcCompat="@drawable/back_arrow" />
 
         <TextView
-            style ="@style/HeaderStyle"
+            style="@style/HeaderStyle"
+            android:layout_gravity="left"
+            android:paddingStart="12dp"
             android:textColor="@color/black"
-            android:text="@string/Settings_text_mainmenu"
-            />
-    </LinearLayout>
+            android:text="@string/Settings_text_mainmenu" />
+
+    </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         style="@style/SettingsMenuViewStyle">
@@ -60,7 +60,7 @@
             android:text="@string/SettingsShareMenuText" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/ShareButtonImageView"
             style="@style/ImageViewSettingsMenuStyle"
             android:src="@drawable/share_icon" />
     </FrameLayout>
@@ -75,7 +75,7 @@
             android:text="@string/callcenter_text_settingsMenu" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/SupportButtonImageView"
             style="@style/ImageViewSettingsMenuStyle"
             android:src="@drawable/callcenter_icon" />
     </FrameLayout>
@@ -90,7 +90,7 @@
             android:text="@string/User_agreement" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/AgreementButtonImageView"
             style="@style/ImageViewSettingsMenuStyle"
             android:src="@drawable/arrow_icon" />
     </FrameLayout>
