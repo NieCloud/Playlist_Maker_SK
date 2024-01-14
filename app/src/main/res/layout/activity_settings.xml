@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    tools:context=".SettingsActivity"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/back_button_image"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            app:srcCompat="@drawable/back_arrow" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:layout_gravity="left"
+            android:paddingStart="12dp"
+            android:textColor="@color/black"
+            android:text="@string/Settings_text_mainmenu" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/SettingsMenuViewStyle">
+
+        <TextView
+            style="@style/SettingsMenuTextStyle"
+            android:text="@string/darkThemeSettingsName"
+            />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/SettingsMenuViewStyle">
+
+        <TextView
+            style="@style/SettingsMenuTextStyle"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/SettingsShareMenuText" />
+
+        <ImageView
+            android:id="@+id/ShareButtonImageView"
+            style="@style/ImageViewSettingsMenuStyle"
+            android:src="@drawable/share_icon" />
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/SettingsMenuViewStyle">
+
+        <TextView
+            style="@style/SettingsMenuTextStyle"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/callcenter_text_settingsMenu" />
+
+        <ImageView
+            android:id="@+id/SupportButtonImageView"
+            style="@style/ImageViewSettingsMenuStyle"
+            android:src="@drawable/callcenter_icon" />
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/SettingsMenuViewStyle">
+
+        <TextView
+            style="@style/SettingsMenuTextStyle"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/User_agreement" />
+
+        <ImageView
+            android:id="@+id/AgreementButtonImageView"
+            style="@style/ImageViewSettingsMenuStyle"
+            android:src="@drawable/arrow_icon" />
+    </FrameLayout>
+
+</LinearLayout>
+

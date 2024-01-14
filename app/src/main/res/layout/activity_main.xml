@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@color/background_mainmenu"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".MainActivity"
+    >
+
+
+        <TextView
+
+            style ="@style/HeaderStyle"
+
+            android:text="@string/playlist_maker"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:paddingTop="24dp"
+        android:paddingBottom="28dp"
+        android:paddingHorizontal="32dp"
+        >
+
+        <Button
+            style="@style/MainMenuButton"
+            android:id="@+id/search_button"
+
+            android:text="@string/Search_text_mainmenu"
+
+            app:cornerRadius="@dimen/button_corner_radius"
+
+            app:icon="@drawable/magnifying_glass_icon"
+
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/icon_padding"
+            app:iconTint="@color/black"
+
+            />
+
+        <Button
+            style="@style/MainMenuButton"
+            android:id="@+id/mediateka_button"
+
+            android:text="@string/Media_text_mainmenu"
+
+            app:cornerRadius="@dimen/button_corner_radius"
+
+            app:icon="@drawable/music_icon"
+
+
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/icon_padding"
+            app:iconTint="@color/black"
+
+            />
+
+        <Button
+            style="@style/MainMenuButton"
+            android:id="@+id/settings_button"
+
+            android:text="@string/Settings_text_mainmenu"
+
+            app:cornerRadius="@dimen/button_corner_radius"
+
+            app:icon="@drawable/gear_icon"
+
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/icon_padding"
+            app:iconTint="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
+
